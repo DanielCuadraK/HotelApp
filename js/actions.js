@@ -15,9 +15,10 @@ var fn = {
         var nombre = $('#inNombre').val();
         var email = $('#inEmail').val();
         var tel = $('#inTel').val();
-        if(nombre != '' && email != '' && tel != '')
+        if(nombre != '' && email != '' && tel != ''){
             navigator.notification.alert('Bienvenido ' + nombre, null, '¡Bienvenido!', 'Continuar');
             window.location.href = "#home";
+        }
         else
             navigator.notification.alert('Faltan de llenar algunos campos', null, 'Error de Datos', 'OK');
     }
