@@ -117,9 +117,9 @@
 	       <div role="main" class="ui-content">
                <ul data-role="listview">
                    <li data-role="listdivider">Datos</li>
-                   <li><input type="text" placeholder="Nombre"></li>
-                   <li><input type="email" placeholder="Correo Electrónico"></li>
-                   <li><input type="tel" placeholder="Teléfono"></li>
+                   <li><input type="text" placeholder="Nombre" id="inNombre"></li>
+                   <li><input type="email" placeholder="Correo Electrónico" id="inEmail"></li>
+                   <li><input type="tel" placeholder="Teléfono" id="inTel"></li>
                    <li id="photoView"></li>
                    <li id="regPhoto"><a href="#">Tomar Foto</a></li>
                </ul>
@@ -127,13 +127,14 @@
                     <div data-role="footer" data-position="fixed">
                         <div data-role="navbar">
                             <ul>
-                                <li><a href="#">Registrar</a></li>
+                                <li><a href="#" id="btRegistrar">Registrar</a></li>
                             </ul>
                         </div>
                     </div>
         </div>
         <!-- END Registro -->
         <!-- Scripts -->
+        <script src="phonegap.js"></script>
         <script src="js/jquery-1.11.2.min.js"></script>
         <script src="js/jquery.mobile-1.4.5.min.js"></script>
         <script src="js/actions.js"></script>
