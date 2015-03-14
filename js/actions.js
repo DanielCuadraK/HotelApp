@@ -6,7 +6,7 @@ var fn = {
         var x = false;
         if (!x)
             window.location.href = "#registro";
-        $('#btnTomaFoto').tap(capture.takePhoto);
+        $('#btTomaFoto').tap(capture.takePhoto);
         $('#btRegistrar').tap(fn.registrar);
     },
     registrar: function(){
@@ -21,7 +21,7 @@ var fn = {
             window.location.href = "#home";
         }
         else
-            navigator.notification.alert('Faltan de llenar algunos campos', null, 'Error de Datos', 'OK');
+            navigator.notification.alert('Faltan de llenar algunos campos v2', null, 'Error de Datos', 'OK');
     }
 };
 $(fn.ready);
