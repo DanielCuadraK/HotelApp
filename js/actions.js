@@ -16,9 +16,10 @@ var fn = {
         var nombre = $('#inNombre').val();
         var email = $('#inEmail').val();
         var tel = $('#inTel').val();
-        if(nombre != '' && email != '' && tel != ''){
-            navigator.notification.alert('Bienvenido ' + nombre, null, '¡Bienvenido!', 'Continuar');
-            window.location.href = "#home";
+        var img = $('#btTomaFoto').attr('rel');
+        
+        if(nombre != '' && email != '' && tel != '' && img != '' && img != undefined){
+            server.sendData(nombre, email, tel, img);
         }
         else
             navigator.notification.alert('Faltan de llenar algunos campos v2', null, 'Error de Datos', 'OK');
