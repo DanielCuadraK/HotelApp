@@ -2,7 +2,8 @@
 var transfer = {
     imgSuccess: function (r) {
     if(r.response == 1) {
-            navigator.notification.alert('El registro de sus datos ha sido un éxito.', function(){
+        $.mobile.loading('hide');    
+        navigator.notification.alert('El registro de sus datos ha sido un éxito.', function(){
             window.location.href = '#home';
             },'Registro','Aceptar');
         }

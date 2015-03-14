@@ -19,7 +19,7 @@ var fn = {
         var img = $('#btTomaFoto').attr('rel');
         
         if(nombre != '' && email != '' && tel != '' && img != '' && img != undefined){
-            navigator.notification.alert('Si tengo datos', null, 'Error de Datos', 'OK');
+            navigator.notification.alert('Si tengo datos', null, 'OK', 'OK');
             server.sendData(nombre, email, tel, img);
         }
         else
