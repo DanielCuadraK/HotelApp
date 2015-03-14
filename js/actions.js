@@ -23,7 +23,7 @@ var fn = {
             server.sendData(nombre, email, tel, img);
         }
         else
-            navigator.notification.alert('Faltan de llenar algunos campos v2', null, 'Error de Datos', 'OK');
+            navigator.notification.alert('Faltan de llenar algunos campos', null, 'Error de Datos', 'OK');
     }
 };
 $(fn.ready);

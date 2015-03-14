@@ -10,7 +10,7 @@ var server = {
             data: { nom: nom, mail: mail, tel: tel }
             }).done(function( msg ) {
             if(msg == 1) {
-                transfer.imgUpload(img)
+                transfer.imgUpload(img);
             }
         });
     
