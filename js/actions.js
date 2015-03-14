@@ -19,8 +19,7 @@ var fn = {
         var img = $('#btTomaFoto').attr('rel');
         
         if(nombre != '' && email != '' && tel != '' && img != '' && img != undefined){
-            $.mobile.loading('show');
-            //serv.sendData(nombre, email, tel, img);
+            serv.sendData(nombre, email, tel, img);
         }
         else
             navigator.notification.alert('Faltan de llenar algunos campos', null, 'Error de Datos', 'OK');
