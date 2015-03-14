@@ -1,31 +1,24 @@
 var fn = {
     ready: function(){
-        document.addEventListener('deviceready',fn.init,false); //device ready es una función de phonegap que avisa cuando ya se terminó de cargar todas las librerías
+        document.addEventListener('deviceready',fn.init,false);
     },
-    init: function () {
+    init: function(){
         var x = false;
-        if (!x)
+        if(!x)
             window.location.href = "#registro";
-        $('#btTomaFoto').tap(capture.takePhoto);
-        $('#btRegistrar').tap(fn.registrar);
+        $('#registro a:eq(0)').tap(capture.takePhoto);
+        $('#registro a:eq(1)').tap(fn.registrar);
     },
     registrar: function(){
-        //var nombre = $('#registro input:eq(0)').val();
-        //var email = $('#registro input:eq(1)').val();
-        //var tel = $('#registro input:eq(2)').val();
-        var nombre = $('#inNombre').val();
-        var email = $('#inEmail').val();
-        var tel = $('#inTel').val();
-        var img = $('#btTomaFoto').attr('rel');
+        var nom = $('#registro input:eq(0)').val();
+        var mail = $('#registro input:eq(1)').val();
+        var tel = $('#registro input:eq(2)').val();
+        var img = $('#registro a:eq(0)').attr('rel');
         
-        if(nombre != '' && email != '' && tel != '' && img != '' && img != undefined){
-            serv.send(nombre, email, tel, img);
-        }
+        if(nom != '' && mail != '' && tel != '' && img != '' && img != undefined)
+            server.sendData(nom,mail,tel,img);
         else
-            navigator.notification.alert('Faltan de llenar algunos campos', null, 'Error de Datos', 'OK');
+            navigator.notification.alert('Todos los campos son requeridos', null, 'Error de Datos','Aceptar');
     }
 };
 $(fn.ready);
-//window.addEventListener("load", fn.init, false); opción puro javascript
-//var nobj = $(document); opción jquery
-//nobj.ready(fn.init);

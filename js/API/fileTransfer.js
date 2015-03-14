@@ -18,7 +18,7 @@ var transfer = {
         options.mimeType = "image/jpeg";
         
         var ft = new FileTransfer();
-        ft.upload(img, serv.url, transfer.imgSuccess, transfer.imgError, options);
+        ft.upload(img, server.url, transfer.imgSuccess, transfer.imgError, options);
     }
 
 };

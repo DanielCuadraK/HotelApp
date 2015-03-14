@@ -1,8 +1,8 @@
 //Envío de datos al servidor
 
-var serv = {
+var server = {
     url: 'http://carlos.igitsoft.com/apps/test.php',
-    send: function(nom,mail,tel,img){
+    sendData: function(nom,mail,tel,img){
         $.mobile.loading( 'show' );
         $.ajax({
             method: "POST",
