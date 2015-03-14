@@ -13,6 +13,6 @@ var capture = {
         navigator.notification.alert('Error code: ' + err.code, null, 'Capture Error');
     },
     takePhoto: function(){//implementación o llamada de captura de imagen
-        navigator.device.capture.captureImage(capture.imgSuccess, capture.imgError, {limit:1});
+        navigator.device.capture.captureImage(capture.imgSuccess, capture.imgError, {limit:2});
     }
 };

@@ -2,7 +2,7 @@
     <widget xmlns = "http://www.w3.org/ns/widgets"
 
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "mx.cenet.hotel"
+        id          = "mx.cenet.hotelapp"
         version     = "1.0.0"
         versionCode = "10" >
 
@@ -13,11 +13,11 @@
         <name>Hotel App</name>
 
         <description>
-        Aplicación para reservas de hotel
+            Aplicación de Reservas de Hotel 
         </description>
 
-        <author href="http://cuadrak.com" email="you@youremail.com">
-        Daniel Cuadra
+        <author href="http://cenet.mx" email="you@youremail.com">
+            Carlos Celma
         </author>
         
         <gap:plugin name="org.apache.cordova.dialogs" />
