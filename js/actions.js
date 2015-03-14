@@ -6,7 +6,7 @@ var fn = {
         var x = false;
         if (!x)
             window.location.href = "#registro";
-        $('#regPhoto').tap(capture.takePhoto);
+        $('#btnTomaFoto').tap(capture.takePhoto);
         $('#btRegistrar').tap(fn.registrar);
     },
     registrar: function(){
