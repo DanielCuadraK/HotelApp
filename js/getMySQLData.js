@@ -10,11 +10,11 @@ var sqlData = {
 		timeout: 5000,
 		success: function(data, status){
 			$.each(data, function(i,item){ 
-				var movie = '<h1>'+item.idMovie+'</h1>'
+				/*var movie = '<h1>'+item.idMovie+'</h1>'
 				+ '<p>'+item.OriginalTitle+'<br>'
-				+'</p>';
+				+'</p>';*/
 				alert(item.OriginalTitle);
-				output.append(movie);
+				//output.append(movie);
 			});
 		},
 		error: function(){
