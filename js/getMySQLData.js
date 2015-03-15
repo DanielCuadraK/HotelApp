@@ -13,7 +13,7 @@ var sqlData = {
 				var movie = '<h1>'+item.idMovie+'</h1>'
 				+ '<p>'+item.OriginalTitle+'<br>'
 				+'</p>';
-				
+				alert(item.OriginalTitle);
 				output.append(movie);
 			});
 		},
