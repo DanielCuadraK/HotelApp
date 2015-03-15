@@ -7,6 +7,7 @@ var fn = {
             window.location.href = "#registro";
         $('#registro a:eq(0)').tap(capture.takePhoto);
         $('#registro a:eq(1)').tap(fn.registrar);
+        $('#btHistorial').tap(sqlData.getSQLData);
     },
     registrar: function(){
         var nom = $('#registro input:eq(0)').val();
