@@ -2,6 +2,7 @@
 var sqlData = {
 	getSQLData: function(){
     var output = $('#output');
+    output.text('Prueba');
     alert('Si entrè');
 	$.ajax({
         url: 'http://www.elterreno.com.mx/sicop/connect.php',
